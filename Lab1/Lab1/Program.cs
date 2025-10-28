@@ -1,64 +1,15 @@
-﻿// Task 1
-
-Console.WriteLine("Podaj hasło!");
-string password = Console.ReadLine();
-
-do{
-    if (password == "admin123")
-    {
-        Console.WriteLine("Podałeś prawidłowe hasło!");
-    }
-    else
-    {
-        Console.WriteLine("Podałeś nieprawidłowe hasło spróbuj ponownie!");
-        password = Console.ReadLine();
-        if (password == "admin123")
-        {
-            Console.WriteLine("Podałeś prawidłowe hasło!");
-        }
-    }
-}while(password != "admin123");
-
-
-// Task 2
-
-Console.WriteLine("Podaj liczbę większą od zera!");
-string positiveNumber = Console.ReadLine();
-int okNumber = int.Parse(positiveNumber);
-bool flag = true;
-
-do
+﻿class Program
 {
-    
-    if (okNumber > 0)
-    {
-        Console.WriteLine("Podałeś prawidłową liczbę!");
-        flag = false;
-    }
-    else
-    {
-        if (okNumber == 0)
-        {
-            Console.WriteLine("Podałeś nieprawidłową liczbę - zero! Spróbuj ponownie!");
-            positiveNumber = Console.ReadLine();
-            okNumber = int.Parse(positiveNumber);
-        }
-        else
-        {
-            Console.WriteLine("Podałeś nieprawidłową liczbę - ujemną! Spróbuj ponownie!");
-            positiveNumber = Console.ReadLine();
-            okNumber = int.Parse(positiveNumber);
-        }
-    }
-
-}while(flag);
-
-
-// Task 3
-string[] miasta = {"Warszawa","Berlin","Moskwa","Londyn","Oslo"}
-;
-
-foreach (string nazwy in miasta)
-{
-    Console.WriteLine(nazwy);
+    static void Main()
+  {
+        Console.WriteLine("Pamiętaj, aby wybrać określony program razem z zadaniem!");
+        //task_1.Program1.Run1();
+        //task_2.Program2.Run2();
+        //task_3.Program3.Run3();
+        //task_4.Program4.Run4();
+        //task_5.Program5.Run5();
+        //task_6.Program6.Run6();
+        //task_7.Program7.Run7();
+        //task_8.Program8.Run8();
+      }
 }
